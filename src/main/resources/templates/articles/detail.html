@@ -17,7 +17,6 @@
     <a id="home" href="#"> Go Home </a>
     <table class="table">
         <thead>
-            artNum, writerId, title, content, regDate, count
             <tr class="table-active">
                 <th style="width: 10%">글번호 : <span id="artNum">1</span></th>
                 <th style="width: 30%">글쓴이ID : <span id="writerId">hong</span></th>
@@ -27,16 +26,18 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td colspan="4" style="width: 60%"><span id="title">테스트</span></td></tr>
+            
+            <tr><td colspan="4" style="width: 100%"><span id="title">테스트</span></td> </tr>
             <tr><td colspan="4" style="width: 100%">
-            <textarea>게시글 테스트
-            </textarea>
-            </td></tr>
+                  <textarea id="content">
+                      게시글 테스트
+                  </textarea>
+                </td> </tr>
         </tbody>
     </table>
 
     <script>
-        document.getElementById('home').addEventListener('click', e => {location.href = '/'})
-    </script>
+        document.getElementById('home').addEventListener('click', e => { location.href="/"})
+   </script>
 </body>
 </html>

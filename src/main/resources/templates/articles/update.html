@@ -13,30 +13,28 @@
     </style>
 </head>
 <body>
-    <h1> Update </h1>
+    <h1> Write </h1>
     <a id="home" href="#"> Go Home </a>
-    <table class="table">
-        <thead>
-            artNum, writerId, title, content, regDate, count
-            <tr class="table-active">
-                <th style="width: 10%">글번호 : <span id="artNum">1</span></th>
-                <th style="width: 30%">글쓴이ID : <span id="writerId">hong</span></th>
-                <th style="width: 30%">수정일 : <span id="regDate">2020-12-01</span></th>
-                <th style="width: 30%">조회수 : <span id="count">100</span></th>
-                
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td colspan="4" style="width: 60%"><span id="title">테스트</span></td></tr>
-            <tr><td colspan="4" style="width: 100%">
-            <textarea>게시글 테스트
-            </textarea>
-            </td></tr>
-        </tbody>
-    </table>
-    
+    <form>
+        <input type="hidden" name="bdGroup">
+        <input type="hidden" name="bdOrder">
+        <input type="hidden" name="bdIndent">
+        <input type="text" name="bdTitle" class="form-control mt-4 mb-2"
+            placeholder="ID을 입력해주세요." required
+        ><br/>
+        <input type="text" name="bdTitle" class="form-control mt-4 mb-2"
+            placeholder="제목을 입력해주세요." required
+        >
+        <div class="form-group">
+            <textarea class="form-control" rows="10" name="bdContent"
+                placeholder="내용을 입력해주세요" required
+            ></textarea>
+        </div>
+        <button class="btn btn-secondary mb-3">제출하기</button>
+    </form>
     <script>
-        document.getElementById('home').addEventListener('click', e => {location.href = '/'})
-    </script>
+        document.getElementById('home').addEventListener('click', e => { location.href="/"})
+        
+   </script>
 </body>
 </html>
