@@ -8,15 +8,26 @@
 </head>
 <body>
     <h1> Home </h1>
-    <a href="#" id="artNum">아트넘버</a><span style="width: 50px"></span>
-    <a href="#" id="witerId">작가이름</a>
-    <a href="#" id="title">제목</a>
-    <a href="#" id="content">콘텐츠</a>
-    <a href="#" id="regDate">날짜</a>
+    <a id="write" href="#">글 쓰기</a>
+    <a id="list" href="#">글 목록</a>
+    <a id="detail" href="#">글 상세</a>
+    <a id="update" href="#">글 수정</a>
     <script>
-        document.getElementById("artNum")
+        document.getElementById("write")
         .addEventListener("click", e => {
-            location.href = 'mypage/articles/'
+            location.href = "/move/articles/write"
+        })
+        document.getElementById("list")
+        .addEventListener("click", e => {
+            location.href = "/move/articles/list"
+        })
+        document.getElementById("detail")
+        .addEventListener("click", e => {
+            location.href = "/move/articles/detail"
+        })
+        document.getElementById("update")
+        .addEventListener("click", e => {
+            location.href = "/move/articles/update"
         })
     </script>
 </body>

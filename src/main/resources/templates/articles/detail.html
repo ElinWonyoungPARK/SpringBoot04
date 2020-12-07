@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Detail </h1>
+    <a id="home" href="#">Home</a>
+    <div class="form-group">
+		<textarea class="form-control" rows="10" name="bdContent"
+			placeholder="내용을 입력해주세요" required
+		></textarea>
+	</div>
+	<button type="submit" class="btn btn-secondary mb-3">제출하기</button>
+</form>
+    <script>
+        document.getElementById("detail")
+        .addEventListener("click", e => {
+            location.href = "articles/detail"
+        })
+    </script>
+</body>
+</html>
