@@ -3,6 +3,6 @@ package com.example.demo.services;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ArticleService {
+public interface ArticleService {
     
 }
