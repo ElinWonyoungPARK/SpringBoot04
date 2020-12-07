@@ -8,6 +8,16 @@
 </head>
 <body>
     <h1> Home </h1>
-  
+    <a href="#" id="artNum">아트넘버</a><span style="width: 50px"></span>
+    <a href="#" id="witerId">작가이름</a>
+    <a href="#" id="title">제목</a>
+    <a href="#" id="content">콘텐츠</a>
+    <a href="#" id="regDate">날짜</a>
+    <script>
+        document.getElementById("artNum")
+        .addEventListener("click", e => {
+            location.href = 'mypage/articles/'
+        })
+    </script>
 </body>
 </html>
