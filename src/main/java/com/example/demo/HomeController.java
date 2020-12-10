@@ -16,7 +16,8 @@ public class HomeController {
     }
     @GetMapping("/move/{dir}/{page}")
     public String move(@PathVariable String dir, @PathVariable String page){
-        printer.accept("이동경로: "+dir +"/" + page);
+        printer.accept("이동경로: "+dir + "/" + page);
         return String.format("%s/%s", dir, page);
     }
+   
 }
